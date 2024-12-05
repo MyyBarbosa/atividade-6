@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script type="text/javascript">
+
+        let nomeMaisNovo = "";
+        let idadeMaisNova = Infinity;
+        for (let i = 0; i < 10; i++) {
+            let nome = prompt("Digite o nome da pessoa " + (i + 1) + ":");
+            let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+            if (idade < idadeMaisNova) {
+                idadeMaisNova = idade;
+                nomeMaisNovo = nome;
+            }
+        }
+        alert("A pessoa mais nova é: " + nomeMaisNovo);
+
+    </script>
+    
+</head>
+<body>
+</body>
+</html>

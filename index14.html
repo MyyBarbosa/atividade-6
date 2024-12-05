@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script type="text/javascript">
+
+        let entre0e100 = 0;
+        let entre101e200 = 0;
+        let maioresQue200 = 0;
+        
+        for (let i = 0; i < 20; i++) {
+            let numero = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+            if (numero >= 0 && numero <= 100) {
+                entre0e100++;
+            } else if (numero >= 101 && numero <= 200) {
+                entre101e200++;
+            } else if (numero > 200) {
+                maioresQue200++;
+            }
+        }
+        
+        alert("Quantidade de números entre 0 e 100: " + entre0e100 + "\n" +
+              "Quantidade de números entre 101 e 200: " + entre101e200 + "\n" +
+              "Quantidade de números maiores que 200: " + maioresQue200);
+  
+  </script>
+
+</head>
+<body>
+</body>
+</html>
